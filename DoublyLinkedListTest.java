@@ -1,4 +1,4 @@
-
+import java.util.*;
 public class DoublyLinkedListTest {
 
 	public static void main(String[] args) {
@@ -6,34 +6,37 @@ public class DoublyLinkedListTest {
 		// Comment only the test functions you want to run
 		
 		testPrintEmptyListForward();
-		// testPrintEmptyListBackward();
-		// testEmptyGet();
-		// testAddFirstAndGet();
-		// testAddFirstForwards();
-		// testAddFirstBackwards();
-		// testAddLastAndGet();
-		// testAddLastForwards();
-		// testAddLastBackwards();
-		// testIsEmpty();
-		// testGetLength();
-		// testRemoveFromEmptyList();
-		// testRemoveFromListWithOneElementNegative();
-		// testRemoveFromListWithOneElementPositive();
-		// testRemoveFromListWithTwoElementNegative();
-		// testRemoveFromListWithTwoElementPositive();
-		// testRemoveFromListWithThreeElementNegative();
-		// testRemoveFromListWithThreeElementPositive();
-		// testIterator();
+		testPrintEmptyListBackward();
+		testEmptyGet();
+		testAddFirstAndGet();
+		testAddFirstForwards();
+		testAddFirstBackwards();
+		testAddLastAndGet();
+		testAddLastForwards();
+		testAddLastBackwards();
+		testIsEmpty();
+		testGetLength();
+		testRemoveFromEmptyList();
+		testRemoveFromListWithOneElementNegative();
+		testRemoveFromListWithOneElementPositive();
+		testRemoveFromListWithTwoElementNegative();
+		testRemoveFromListWithTwoElementPositive();
+		testRemoveFromListWithThreeElementNegative();
+		testRemoveFromListWithThreeElementPositive();
+		testIterator();
 		
 
 	}
 	
 	public static void testPrintEmptyListForward() {
 		//TODO
+		List<String> list = new DoublyLinkedList<String>();
 		list.print();
 	}
 	public static void testPrintEmptyListBackward() {
 		//TODO
+		List <String> list = new DoublyLinkedList<String>();
+		list.printBackwards();
 	}
 	
 	public static void testEmptyGet() {
@@ -270,13 +273,18 @@ public class DoublyLinkedListTest {
 		
 		System.out.println("");
 		System.out.println("-------------- testIterator ------------:");
-		List<String> list = new DoublyLinkedList<String>();
+		DoublyLinkedList<String> list = new DoublyLinkedList<String>();
 		list.addLast("Apple");
 		list.addLast("Cherry");
 		list.addLast("Banana");
 
 		//TODO	
                 // ADD code to obtain iterator object, then uses it to iterate through the list and print its data.
+		Iterator<String> i = list.iterator();
+		while (i.hasNext()) {
+			String element = i.next();
+			System.out.println(element);
+		}
 		
 		System.out.println("-------------- testIterator  ------------:");
 	}
