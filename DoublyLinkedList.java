@@ -30,12 +30,15 @@ public class DoublyLinkedList<T> implements List<T> {
 	@Override
 	public void print() {
 		// TODO
+		while (next != null) {
+			data.next;
+		}
 				
 	}
 
 	@Override
 	public void printBackwards() {
-		// TODO 
+		// TODO
 			
 	}
 

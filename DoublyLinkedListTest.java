@@ -5,7 +5,7 @@ public class DoublyLinkedListTest {
 		
 		// Comment only the test functions you want to run
 		
-		// testPrintEmptyListForward();
+		testPrintEmptyListForward();
 		// testPrintEmptyListBackward();
 		// testEmptyGet();
 		// testAddFirstAndGet();
@@ -30,6 +30,7 @@ public class DoublyLinkedListTest {
 	
 	public static void testPrintEmptyListForward() {
 		//TODO
+		list.print();
 	}
 	public static void testPrintEmptyListBackward() {
 		//TODO
